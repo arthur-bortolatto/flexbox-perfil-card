@@ -1,0 +1,63 @@
+main {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 25px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+main .card {
+    background-color: var(--card-background-color);
+    width: 310px;
+    height: 330px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .card .profile-image {
+    max-width: 90px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+main .card h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: -25px;
+}
+
+main .card h2 .age {
+    color: var(--secundary-text-color);
+    
+}
+
+main .card p .location {
+    margin-top: -20px;
+    color: var(--secundary-text-color);
+}
+
+main .card .metrics {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--secundary-text-color);
+    
+   width: 310px;
+    padding-top: 20px;
+}
+
+main .card .metrics .numbers {
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    padding: 5px;
+}
+
+main .card .metrics .numbers .indicators {
+    font-weight: 300;
+    color: var(--secundary-text-color);
+}
