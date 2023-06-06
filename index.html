@@ -9,39 +9,49 @@
             content="Exercício de Flexbox do curso DevQuest - Cartão de Perfil"
         />
         <title>Flexbox - Cartão de Perfil</title>
-        <link rel="shortcut icon" href="https://placekitten.com/32/32">
+        <link rel="shortcut icon" href="https://placekitten.com/32/32" />
+        <link rel="stylesheet" href="./src/css/reset.css" />
+        <link rel="stylesheet" href="./src/css/variables.css" />
         <link
             rel="stylesheet"
-            href="./01 - Flexbox - Cartão de perfil/src/css/reset.css"
+            href="./src/css/style.css"
+            <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
             rel="stylesheet"
-            href="01 - Flexbox - Cartão de perfil/src/css/variables.css"
         />
-        <link
-            rel="stylesheet"
-            href="./01 - Flexbox - Cartão de perfil/src/css/style.css"
-        />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <main>
+        <main class="container">
             <div class="card">
-                <img
-                    src="https://placekitten.com/90/90"
-                    alt="foto de perfil"
-                    class="profile-image"
-                />
-                <h2 class="name">Victor Crest <span class="age">26</span></h2>
-                <p class="location">London</p>
-                <div class="metrics">
-                    <p class="numbers">80K <br><span class="indicators">Followers</span></p>
-                    <p class="numbers">803K <br><span class="indicators">Likes</span></p>
-                    <p class="numbers">1.4K <br><span class="indicators">Photos</span></p>
+                <div class="profile-informations">
+                    <img
+                        src="https://placekitten.com/90/90"
+                        alt="foto de perfil"
+                        class="profile-image"
+                    />
+                    <p>Victor Crest <span class="age">26</span></p>
+                    <span class="city">London</span>
                 </div>
+                <hr />
+                <ul class="profile-numbers">
+                    <li class="info">
+                        <p class="counter">80K</p>
+                        <span class="counter-type">Followers</span>
+                    </li>
+                    <li class="info">
+                        <p class="counter">803K</p>
+                        <span class="counter-type">Likes</span>
+                    </li>
+                    <li class="info">
+                        <p class="counter">1.4K</p>
+                        <span class="counter-type">Photos</span>
+                    </li>
+                </ul>
             </div>
         </main>
     </body>

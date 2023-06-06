@@ -1,63 +1,64 @@
-main {
+body {
     background-color: var(--background-color);
+    height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+}
+
+hr {
+    width: 100%;
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 25px;
-    font-family: "Kumbh Sans", sans-serif;
+    height: 100%;
 }
 
-main .card {
+.container .card {
     background-color: var(--card-background-color);
-    width: 310px;
-    height: 330px;
-    border-radius: 8px;
+    width: 330px;
+    height: 350px;
+    border-radius: 10px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    gap: 25px;
+    margin: 20px;
 }
 
-main .card .profile-image {
-    max-width: 90px;
-    border-radius: 100%;
-    margin-bottom: 15px;
-}
-
-main .card h2 {
-    font-size: 17px;
-    font-weight: 700;
-    margin-top: -25px;
-}
-
-main .card h2 .age {
-    color: var(--secundary-text-color);
-    
-}
-
-main .card p .location {
-    margin-top: -20px;
-    color: var(--secundary-text-color);
-}
-
-main .card .metrics {
+.container .card .profile-informations {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.container .card .profile-image {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.container .card .profile-numbers {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    border-top: 1px solid var(--secundary-text-color);
-    
-   width: 310px;
-    padding-top: 20px;
-}
-
-main .card .metrics .numbers {
-    font-weight: 700;
-    font-size: 17px;
+    width: 100%;
+    padding-bottom: 30px;
     text-align: center;
-    padding: 5px;
 }
 
-main .card .metrics .numbers .indicators {
-    font-weight: 300;
-    color: var(--secundary-text-color);
+.container .card .profile-numbers .info .counter,
+.container .card .profile-informations p {
+    font-weight: 700;
+}
+
+.container .card .profile-informations .age,
+.container .card .profile-informations .city,
+.container .card .profile-numbers .info .counter-type {
+    color: var(--text-color);
 }
